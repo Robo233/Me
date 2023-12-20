@@ -1,0 +1,117 @@
+body{
+  height:800px;
+  cursor:none;
+}
+
+#contactMenu{
+    color: #dba767;
+    transition: 1.5s;
+}
+
+.contact{
+    display: block;
+  }
+
+#aboutMenuContact{
+  color:tomato;
+  transition: 1.5s;
+}
+
+#aboutMenuContact:hover {
+  color: #dba767;
+ 
+}
+
+#projectsMenuContact{
+  color:tomato;
+  cursor:pointer;
+  transition: 1.5s;
+}
+
+#projectsMenuContact:hover {
+  color: #dba767;
+ 
+}
+
+#contactMenuContact{
+  color:#dba767;
+  cursor:pointer;
+  transition: 1.5s;
+}
+
+#contactMenuContact:hover {
+  color: #dba767;
+ 
+}
+  
+  #contactTitle{
+    position:relative;
+    top:155px;
+    font-size: 70px;
+    color: tomato;
+    text-shadow: 0 0 20px tomato;
+    transition: 1.5s;
+    
+  }
+
+  #contactTitle:hover {
+    color: #dba767;
+    text-shadow: 0 0px 20px #dba767;
+  }
+
+  #email{
+    position: absolute;
+    top:360px;
+    left:30px;
+  }
+
+  #emailValue{
+    position: absolute;
+    top:360px;
+    left:110px;
+  }
+
+  #LinkedIn{
+    position: absolute;
+    top:410px;
+    left:30px;    
+  }
+
+  #LinkedInValue{
+    position: absolute;
+    top:410px;
+    left:110px;    
+  }
+
+  #Phone{
+    position: absolute;
+    top:460px;
+    left:30px;    
+  }
+
+  #phoneNumber{
+    position: absolute;
+    top:460px;
+    left:110px;    
+  }
+
+  @media screen and (max-width: 650px){
+
+    .contactTitle{
+     
+      top:135px;
+      
+    }
+
+    .email{
+ 
+      top:230px;
+
+    }
+
+  }
+
+#footer{
+  top:650px;
+}
+  

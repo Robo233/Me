@@ -1,0 +1,27 @@
+.about{
+    display:block;
+}
+
+.about-title{
+    color:white;
+    font-size: 50px;
+    position:relative;
+    top:-250px;
+    transition: 3s ease;
+    display: block;
+    transform:translateX(1200px);
+    cursor:default;
+}
+.about-text-container{
+    max-width:800px;
+    transition:3s ease;
+    transform:translateX(1200px);
+}
+.about-text{
+    color:white;
+    font-size: 30px;
+    position:relative;
+    top:-100px;
+    cursor:default;
+  
+}

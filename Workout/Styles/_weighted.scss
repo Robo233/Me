@@ -1,0 +1,27 @@
+.weighted-image{
+    position: relative;
+    top:0px;
+}
+
+@media only screen and (max-height:400px){
+      
+    .weighted-text{
+        top:20px;
+    }
+}
+
+@media only screen and (max-height:690px){
+
+    .weighted-image{
+        
+        top:-100px;
+    }
+    }
+
+    @media only screen and (max-height:600px){
+
+        .weighted-image{
+            
+            top:-200px!important;
+        }
+        }

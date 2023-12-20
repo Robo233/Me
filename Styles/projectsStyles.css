@@ -1,0 +1,217 @@
+body{
+  z-index: -1;
+  height:1300px;
+  
+}
+
+#projectsMenu{
+  color: #dba767;
+  text-shadow: 0 0px 10px #dba767;
+}
+
+.projects{
+    display:block;
+}
+
+.projectsTypeList{
+    position: relative;
+    top:160px;
+
+    
+}
+
+#projectTypeText{
+    position:relative;
+    font-size: 50px;
+    color: tomato;
+    text-shadow: 0 0 20px tomato; 
+    max-width: 20%;
+    padding: 0.3rem 3rem;
+    cursor: pointer;
+    white-space: nowrap;
+    padding-top:40px;
+    transition: 0.5s linear;
+    
+}
+
+
+
+
+@media screen and (max-width: 1620px) {
+  #projectTypeText{
+    font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 1375px) {
+  #projectTypeText{
+    font-size: 35px;
+    }
+}
+
+@media screen and (max-width: 1255px) {
+  #projectTypeText{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px
+  }
+ 
+ 
+}
+
+#aboutMenuProjects{
+    color: tomato;
+    transition: 1.5s;
+    cursor:pointer;
+}
+
+
+#projectsMenuProjects{
+  color:#dba767;
+  transition: 1.5s;
+  cursor:pointer;
+}
+
+#projectsMenuProjects:hover {
+  color: #dba767;
+  
+}
+
+#contactMenuProjects{
+  color:tomato;
+  transition: 1.5s;
+  cursor:pointer;
+}
+
+#contactMenuProjects:hover {
+  color: #dba767;
+ 
+}
+
+.websites{
+  display: block;
+  transition: opacity 0.3 ease-in-out;
+  cursor: pointer;
+}
+
+.browserGames{
+  display: none;
+  transition: opacity 0.3 ease-in-out;
+}
+
+.desktopGames{
+  display: none;
+  transition: opacity 0.3 ease-in-out;
+}
+
+.mobileGames{
+  display:none;
+  transition: opacity 0.3 ease-in-out;
+}
+
+
+#project{
+  position:relative;
+  top:120px;
+  margin-top:120px;
+  width:800px;
+  height:400px;
+  background-color: tomato;
+  box-shadow: 0 0 25px tomato;
+  border-radius: 50px;
+  transition: 1.5s;
+  
+}
+
+.projectContainer{
+  transition: opacity 0.3 ease-in-out;
+ 
+}
+
+#project:hover {
+  background-color: #dba767;
+  box-shadow: 0 0px 50px #dba767;
+ 
+}
+
+#projectLogo{
+  margin: 0;
+  position: absolute;
+  left: 20px;
+  transform: translate(0, -50%);
+  cursor: pointer;
+}
+
+.desktopImage{
+  top: 50%;
+}
+
+.mobileImage{
+  top: 170px;
+}
+
+#textGrid{
+  position: absolute;
+  right: 0;
+  height:100%;
+  
+}
+
+#projectTitle{
+  cursor: pointer;
+  position: relative;
+  top: 20px; 
+  font-size:40px;
+}
+
+#projectDescription{
+  cursor: pointer;
+  position: relative;
+  top: 60px;
+  font-size:20px;
+
+}
+
+#technologiesUsed{
+  cursor: pointer;
+  position: relative;
+  font-size:30px;
+}
+
+#technologiesList{
+  cursor: pointer;
+  position: relative;
+  font-size:20px;
+}
+
+#footer{
+  top:300px;
+}
+
+@media screen and (min-width: 830px) {
+  #textGrid{
+    top:0px !important;
+  }
+}
+
+@media screen and (max-width: 830px) {
+
+  #project{
+    width:300px;
+    height:700px;
+  }
+  #projectLogo{
+
+    position:relative;
+    left: unset;
+  }
+
+  #textGrid{
+    position:relative;
+    width:290px !important;
+    left:0;
+  }
+
+}
+

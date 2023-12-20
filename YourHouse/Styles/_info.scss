@@ -1,0 +1,26 @@
+.info{
+    display: block;
+}
+.info-text-container{
+    max-width: 800px;
+    transition:3s ease;
+    transform:translateX(2400px);
+}
+.info-text{
+    color:white;
+    font-size: 30px;
+    position:relative;
+    top:-400px;
+    cursor:default;
+  
+}
+.ready-text{
+    color:white;
+    font-size: 30px;
+    position:relative;
+    top:-200px;
+    transition:3s ease;
+    display:block;
+    transform:translateX(2400px);
+    cursor:default;
+}

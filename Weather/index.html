@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title>Weather</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="shortcut icon" type="image/x-icon" href="Images/Weather-Logo.png">
+        
+    </head>
+
+    <body class="bg-neutral-400 bg-cover text-white font-sans" >
+        <div style="min-width: 1920px; margin: 0 auto; max-height: 1080px;" >
+        <div id="searchContainer" class="absolute p-[50px]">
+            <input class="rounded-l-2xl w-[250px] h-[50px] text-black" type="text" placeholder="Please Enter City Name" id="searchInput">
+            <button class="bg-[skyblue] rounded-r-2xl w-[60px] h-[50px] absolute" id="searchBtn">
+                <img src="Images/Search-icon.png" class="w-[30px] absolute left-1/2 transform -translate-x-1/2 top-1/2 transform -translate-y-1/2" />
+            </button>
+        </div>
+
+        <div id="unit-systems" class="absolute left-[500px] top-[50px] text-[25px] text-black">
+           <label><input type="radio" name="temperature" value="celsius" checked="checked">Celsius</label><br>
+           <label><input type="radio" name="temperature" value="fahrenheit">Fahrenheit</label><br>
+        </div>
+
+          <div id="weatherContainer" class="bg-[#000000] bg-opacity-50 p-[10px] rounded-lg invisible w-[310px] h-[270px] absolute top-[150px] left-1/2 transform -translate-x-1/2" >
+            <div id="weatherDescription">
+                <h1 id="cityHeader" class="text-[42px]  " ></h1>
+                <div id="weatherMain">
+                    <div id="temperature" class="inline-block text-[34px] relative bottom-[14px] "></div>
+                    <div id="weatherDescriptionHeader" class="inline-block text-[24px] relative bottom-[17px] "></div>
+                    <div class="inline-block" ><img id="documentIconImg"></div>
+                </div>
+                <hr class="relative bottom-[8px]">
+                <div id="windSpeed" class="block text-[24px] "></div>
+                <div id="humidity" class="block text-[24px] "></div>
+
+            </div>
+            </div>
+        </div>
+    </body>
+
+    <script src="script.js"></script>
+
+</html>
+

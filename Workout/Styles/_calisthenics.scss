@@ -1,0 +1,57 @@
+.calisthenics-image{
+    position: relative;
+    top:-200px;
+}
+
+@media only screen and (max-width:640px){
+    #calisthenics-title{
+        max-width:310px;
+    }
+    
+    }
+
+
+@media only screen and (max-width:400px){
+#calisthenics-title{
+    font-size: 60px;
+}
+}
+@media only screen and (max-height:600px){
+    .calisthenics-image{
+        top:-200px!important;
+    }
+    #calisthenics-title{
+        font-size: 50px;
+    }
+    #calisthenics-text{
+        font-size: 15px;;
+    }
+ }
+
+ @media only screen and (max-height:410px){
+   
+    #calisthenics-text{
+        top:20px;
+    }
+ }
+
+ @media only screen and (max-height:380px){
+   
+    #calisthenics-title{
+        font-size: 40px;
+        top:0px;
+    }
+    #calisthenics-text{
+        top:0px;
+    }
+ }
+ @media only screen and (max-height:380px){
+   
+    #calisthenics-title{
+        font-size: 30px;
+        top:10px;
+    }
+    #calisthenics-text{
+        top:20px;
+    }
+ }

@@ -1,0 +1,217 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body{
+  transition: 1.5s;
+}
+
+.a{
+  width:700px;
+  position:relative;
+  top:3000px;
+}
+
+.position{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#aboutMenu{
+  color: #dba767;
+  cursor:pointer;
+  transition: 1.5s;
+}
+
+#aboutMenu:hover {
+  color: #dba767;
+  
+}
+
+
+#projectsMenu{
+  color:tomato;
+  transition: 1.5s;
+  cursor:pointer;
+}
+
+#projectsMenu:hover {
+  color: #dba767;
+  
+}
+
+#contactMenu{
+  color:tomato;
+  transition: 1.5s;
+  cursor:pointer;
+}
+
+#contactMenu:hover {
+  color: #dba767;
+  
+}
+
+.about{
+  display: block;
+  
+}
+
+.aboutImageBig{
+  width:700px;
+  height:700px;
+  position:absolute;
+  left: -700px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 100%;
+  display: none;
+  
+}
+
+
+#x{
+  font-size: 40px;
+  color:black;
+  position:absolute;
+  right:30px;
+  top:30px;
+  display:none;
+}
+
+
+#aboutImage{
+  width:400px;
+  height:400px;
+  position:absolute;
+  top:250px;
+  right:250px;
+  border-radius: 100%;
+  box-shadow: 0 0 20px tomato;
+  cursor:pointer;
+  transition: 1.5s;
+  
+}
+
+#aboutImage:hover {
+  box-shadow: 0 0px 30px #dba767;
+ 
+}
+
+
+#aboutTitle{
+  position:relative;
+  max-width:315px;
+  font-size: 70px;
+  color: tomato;
+  text-shadow: 0 0 20px tomato;
+  transform: translate(-50%,-50%);
+  top:150px;
+  transition: 1.5s;
+ 
+}
+#aboutTitle:hover {
+  color: #dba767;
+  text-shadow: 0 0px 20px #dba767;
+}
+
+#aboutText{
+  width:520px;
+  position:absolute;
+  font-size:25px;
+  top:330px;
+  left:270px;
+  color:#e68c3e;
+  text-shadow: 0 0 20px tomato;
+  max-width:600px;
+  transition: 1.5s;
+  
+}
+
+#aboutText:hover {
+  color: #dba767;
+  text-shadow: 0 0px 20px #dba767;
+}
+
+#footer{
+  position:absolute;
+  top:800px;
+  height:200px;
+  background-color: #6e511e; 
+}
+
+@media screen and (max-width: 1500px){
+
+  #aboutImage{
+   
+    left:50%;
+    right:unset;
+    width:305px;
+    margin-left:-155px;
+    top:320px;
+    
+  }
+
+
+  #aboutText{
+    left:50%;
+    margin-left:-155px;
+    top:800px;
+    max-width:305px;
+  }
+
+  #footer{
+    top:1350px;
+  }
+}
+
+
+
+@media screen and (max-width: 750px){
+
+  .aboutImageBig{
+   
+    width: 500px;
+    left: -500px;
+    height: 500px;
+    
+  }
+
+
+}
+
+@media screen and (max-width: 540px){
+
+  .aboutImageBig{
+   
+    width: 400px;
+    left: -400px;
+    height: 400px;
+    
+  }
+
+
+}
+
+@media screen and (max-width: 440px){
+
+  .aboutImageBig{
+   
+    width: 300px;
+    left:-300px;
+    height: 300px;
+    
+  }
+
+
+}
+

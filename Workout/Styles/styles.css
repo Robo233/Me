@@ -1,0 +1,518 @@
+body {
+  background-color: black;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: sans-serif;
+  color: blanchedalmond;
+}
+
+img {
+  width: 400px;
+  height: 400px;
+  border-radius: 100%;
+  left: 200px;
+}
+
+.title {
+  position: relative;
+  top: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 70px;
+  font-weight: bold;
+  text-align: center;
+}
+
+p {
+  position: relative;
+  left: 800px;
+  top: 200px;
+  font-size: 20px;
+  width: 300px;
+  letter-spacing: 3px;
+  line-height: 160%;
+  max-width: 300px;
+  cursor: default;
+}
+
+a {
+  cursor: default;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+section {
+  height: 100vh;
+  scroll-snap-align: start;
+}
+
+.container {
+  -ms-scroll-snap-type: y mandatory;
+      scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
+}
+
+@media only screen and (max-height: 700px) {
+  .about-image {
+    top: 100px !important;
+  }
+  .calisthenics-image {
+    top: -300px !important;
+  }
+  .basics-image {
+    top: -300px !important;
+  }
+  .skills-image {
+    top: -350px !important;
+  }
+  .weighted-image {
+    top: -100px !important;
+  }
+}
+
+@media only screen and (max-height: 530px) {
+  img {
+    display: none;
+  }
+  .position {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .title {
+    left: unset;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  p {
+    left: unset;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media only screen and (max-width: 1110px) {
+  p {
+    left: 650px;
+  }
+  img {
+    left: 100px;
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  p {
+    left: 550px;
+  }
+  img {
+    left: 50px;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  p {
+    left: 490px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  img {
+    display: none;
+  }
+  .position {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  p {
+    left: unset;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media only screen and (max-height: 680px) {
+  p {
+    top: 50px;
+  }
+}
+
+@media only screen and (max-height: 700px) {
+  .title {
+    top: 20px;
+  }
+}
+
+.about-text {
+  top: -200px;
+}
+
+.about-image {
+  position: relative;
+  top: 200px;
+}
+
+@media only screen and (max-width: 800px) {
+  .about-text {
+    top: 200px;
+  }
+}
+
+@media only screen and (max-height: 600px) {
+  .about-image {
+    top: 0px !important;
+  }
+}
+
+@media only screen and (max-height: 530px) {
+  .about-text {
+    top: 100px;
+    left: unset;
+  }
+}
+
+@media only screen and (max-height: 390px) {
+  .about-text {
+    top: 30px;
+  }
+}
+
+.calisthenics-image {
+  position: relative;
+  top: -200px;
+}
+
+@media only screen and (max-width: 640px) {
+  #calisthenics-title {
+    max-width: 310px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  #calisthenics-title {
+    font-size: 60px;
+  }
+}
+
+@media only screen and (max-height: 600px) {
+  .calisthenics-image {
+    top: -200px !important;
+  }
+  #calisthenics-title {
+    font-size: 50px;
+  }
+  #calisthenics-text {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-height: 410px) {
+  #calisthenics-text {
+    top: 20px;
+  }
+}
+
+@media only screen and (max-height: 380px) {
+  #calisthenics-title {
+    font-size: 40px;
+    top: 0px;
+  }
+  #calisthenics-text {
+    top: 0px;
+  }
+}
+
+@media only screen and (max-height: 380px) {
+  #calisthenics-title {
+    font-size: 30px;
+    top: 10px;
+  }
+  #calisthenics-text {
+    top: 20px;
+  }
+}
+
+.basics-image {
+  position: relative;
+  top: -200px;
+}
+
+@media only screen and (max-height: 680px) {
+  .basics-text {
+    top: 30px;
+  }
+}
+
+@media only screen and (max-height: 600px) {
+  .basics-image {
+    top: -400px !important;
+  }
+}
+
+@media only screen and (max-height: 510px) {
+  .basics-text {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-height: 340px) {
+  #basics-title {
+    font-size: 40px;
+  }
+}
+
+.skills-image {
+  position: relative;
+  top: -250px;
+}
+
+@media only screen and (max-width: 550px) {
+  #skills-title {
+    max-width: 310px;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  #skills-title {
+    font-size: 60px;
+  }
+}
+
+@media only screen and (max-height: 820px) {
+  .skills-text {
+    top: 100px;
+  }
+  #skills-title {
+    top: 20px;
+  }
+}
+
+@media only screen and (max-height: 640px) {
+  #skills-title {
+    font-size: 50px;
+  }
+}
+
+@media only screen and (max-height: 610px) {
+  .skills-text {
+    font-size: 15px;
+  }
+  .skills-image {
+    top: -250px !important;
+  }
+}
+
+@media only screen and (max-height: 500px) {
+  .skills-text {
+    top: 50px;
+  }
+}
+
+@media only screen and (max-height: 350px) {
+  .skills-text {
+    top: 20px;
+  }
+}
+
+@media only screen and (max-height: 450px) {
+  #skills-title {
+    display: none;
+  }
+}
+
+.weighted-image {
+  position: relative;
+  top: 0px;
+}
+
+@media only screen and (max-height: 400px) {
+  .weighted-text {
+    top: 20px;
+  }
+}
+
+@media only screen and (max-height: 690px) {
+  .weighted-image {
+    top: -100px;
+  }
+}
+
+@media only screen and (max-height: 600px) {
+  .weighted-image {
+    top: -200px !important;
+  }
+}
+
+.contact-text {
+  position: relative;
+  top: 130px;
+  font-size: 20px;
+  max-width: 300px;
+  letter-spacing: 3px;
+  line-height: 160%;
+  max-width: 310px;
+}
+
+.check-out {
+  position: relative;
+  top: 210px;
+  font-size: 20px;
+  max-width: 300px;
+  letter-spacing: 3px;
+  line-height: 160%;
+  max-width: 310px;
+}
+
+button {
+  position: relative;
+  top: 160px;
+  padding: 0.25rem 0.5rem;
+  width: 300px;
+  height: 200px;
+  border: 5px solid white;
+  border-radius: 7px solid;
+  color: white;
+  background: rgba(0, 0, 0, 0.6);
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  cursor: pointer;
+  outline: none;
+  border-radius: 15%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+button:hover {
+  background: #222222;
+}
+
+.social i {
+  position: relative;
+  top: 260px;
+  font-size: 30px;
+  color: white;
+  letter-spacing: 30px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  max-width: 300px;
+  cursor: pointer;
+}
+
+.social i:hover {
+  color: #3f3f3f;
+}
+
+@media only screen and (max-height: 700px) {
+  .check-out {
+    display: none;
+  }
+}
+
+@media only screen and (max-height: 650px) {
+  .social i {
+    top: 200px;
+  }
+}
+
+@media only screen and (max-height: 575px) {
+  .contact-text {
+    top: 75px;
+  }
+}
+
+@media only screen and (max-height: 590px) {
+  button {
+    top: 90px;
+  }
+  .contact-text {
+    top: 50px;
+  }
+  .social i {
+    top: 120px;
+  }
+}
+
+@media only screen and (max-height: 500px) {
+  button {
+    top: 100px;
+  }
+}
+
+@media only screen and (max-height: 500px) {
+  button {
+    top: 40px;
+  }
+  .contact-text {
+    display: none;
+  }
+  .social i {
+    top: 100px;
+  }
+}
+
+@media only screen and (max-height: 430px) {
+  .social i {
+    top: 80px;
+  }
+}
+
+@media only screen and (max-height: 400px) {
+  #contact {
+    display: none;
+  }
+}
+
+@media only screen and (max-height: 350px) and (max-width: 500px) {
+  .social i {
+    display: none;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

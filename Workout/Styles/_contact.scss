@@ -1,0 +1,126 @@
+.contact-text{
+    position:relative;
+    top:130px;
+    font-size: 20px;
+    max-width: 300px;
+    letter-spacing: 3px;
+    line-height: 160%;
+    max-width: 310px;
+}
+
+.check-out{
+    position:relative;
+    top:210px;
+    font-size: 20px;
+    max-width: 300px;
+    letter-spacing: 3px;
+    line-height: 160%;
+    max-width: 310px;
+    
+}
+
+button{
+    position:relative;
+    top:160px;
+    padding:0.25rem 0.5rem;
+    width: 300px;
+    height:200px;
+    border:5px solid white;
+    border-radius:7px solid;
+    color:white;
+    background:rgba(0,0,0,0.6);
+    font-size:1.5rem;
+    text-transform:capitalize;
+    cursor: pointer;
+    outline:none; 
+    border-radius:15%;
+    transition:0.5s;
+    &:hover{                 
+        background: $color1;
+    }
+}
+
+.social i{
+    position:relative;
+    top:260px;
+    font-size:30px;
+    color:white;
+    letter-spacing: 30px;
+    transition: 0.5s;
+    max-width: 300px;
+    cursor:pointer;
+    &:hover{
+        color:$color2;
+    }
+}
+
+
+@media only screen and (max-height:700px){
+      
+    .check-out{
+        display:none;
+        }
+    }
+
+    @media only screen and (max-height:650px){
+  
+        .social i{
+            top:200px;
+            }
+        }
+        @media only screen and (max-height:575px){
+  
+            .contact-text{
+                top:75px;
+                }
+            }
+        
+            @media only screen and (max-height:590px){
+  
+                button{
+                   top:90px;
+                    }
+                    .contact-text{
+                        top:50px;
+                    }
+                    .social i{
+                        top:120px;
+                    }
+                }
+                @media only screen and (max-height:500px){
+                  button{
+                      top:100px;
+                  }
+                 
+                    }
+                    @media only screen and (max-height:500px){
+                        button{
+                            top:40px;
+                        }
+                        .contact-text{
+                            display:none;
+                        }
+                        .social i{
+                            top:100px;
+                        }
+                          }
+                          @media only screen and (max-height:430px){
+                          
+                            .social i{
+                                top:80px;
+                            }
+                              }
+                        
+                              @media only screen and (max-height:400px){
+                       
+                               #contact{
+                                   display: none;
+                               }
+                                  }
+
+                                           @media only screen and (max-height:350px) and (max-width:500px){
+                       
+                                            .social i{
+                                                display: none;
+                                            }
+                                               }

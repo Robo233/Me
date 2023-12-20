@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <link rel="shortcut icon" type="image/x-icon" href="../Images/Logos/yourHouseLogo.png">
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>YourHouse</title>
+    <link rel="stylesheet" href="TemplateData/style.css">
+    <link rel="stylesheet" href="Styles/styles.css">
+  </head>
+  <body>
+    <a class="arrow-right">></a>
+    <a class="arrow-left"><</a>
+<div class="home">
+  <center><a  class="title" data-aos="flip-up" data-aos-delay="0.5" >Want a new, better home?</a></center>
+  <center><img src="logo.png" class="home-logo"></center>
+ 
+</div>
+<div class="about">
+<center><a class="about-title"  >About our houses</a></center>
+<center><div class="about-text-container"><a class="about-text" >There's a new city quarter near the town called White House Quarter. There are several houses in this quarter, some of them are two storey buildings and some of them are flats. </a></div></center>
+</div>
+<div class="info">
+ <center> <div class="info-text-container"><a class="info-text">Our homes are very comfortable, in each of them there are multiple bathrooms, large living rooms and nice looking kitchens. The furnitures inside the rooms are high quality.</a></div></center>
+<center><a class="ready-text">So are you ready to see our houses?</a></center>
+</div>
+<center><div class="unity">
+    <div id="unity-container" class="unity-desktop">
+      <canvas id="unity-canvas" width=960 height=600></canvas>
+      <div id="unity-loading-bar">
+        <div id="unity-logo"></div>
+        <div id="unity-progress-bar-empty">
+          <div id="unity-progress-bar-full"></div>
+        </div>
+      </div>
+      <div id="unity-mobile-warning">
+        WebGL builds are not supported on mobile devices.
+      </div>
+      <div id="unity-footer">
+        <div id="unity-webgl-logo"></div>
+        <div id="unity-fullscreen-button"></div>
+        <div id="unity-build-title">YourHouse</div>
+      </div>
+    </div>
+    <script>
+      var buildUrl = "Build";
+      var loaderUrl = buildUrl + "/YourHouse 2.loader.js";
+      var config = {
+        dataUrl: buildUrl + "/YourHouse 2.data",
+        frameworkUrl: buildUrl + "/YourHouse 2.framework.js",
+        codeUrl: buildUrl + "/YourHouse 2.wasm",
+        streamingAssetsUrl: "StreamingAssets",
+        companyName: "DefaultCompany",
+        productName: "YourHouse",
+        productVersion: "0.1",
+      };
+
+      var container = document.querySelector("#unity-container");
+      var canvas = document.querySelector("#unity-canvas");
+      var loadingBar = document.querySelector("#unity-loading-bar");
+      var progressBarFull = document.querySelector("#unity-progress-bar-full");
+      var fullscreenButton = document.querySelector("#unity-fullscreen-button");
+      var mobileWarning = document.querySelector("#unity-mobile-warning");
+
+      // By default Unity keeps WebGL canvas render target size matched with
+      // the DOM size of the canvas element (scaled by window.devicePixelRatio)
+      // Set this to false if you want to decouple this synchronization from
+      // happening inside the engine, and you would instead like to size up
+      // the canvas DOM size and WebGL render target sizes yourself.
+      // config.matchWebGLToCanvasSize = false;
+
+      if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
+        container.className = "unity-mobile";
+        // Avoid draining fillrate performance on mobile devices,
+        // and default/override low DPI mode on mobile browsers.
+        config.devicePixelRatio = 1;
+        mobileWarning.style.display = "block";
+        setTimeout(() => {
+          mobileWarning.style.display = "none";
+        }, 5000);
+      } else {
+        canvas.style.width = "960px";
+        canvas.style.height = "600px";
+      }
+      loadingBar.style.display = "block";
+
+      var script = document.createElement("script");
+      script.src = loaderUrl;
+      script.onload = () => {
+        createUnityInstance(canvas, config, (progress) => {
+          progressBarFull.style.width = 100 * progress + "%";
+        }).then((unityInstance) => {
+          loadingBar.style.display = "none";
+          fullscreenButton.onclick = () => {
+            unityInstance.SetFullscreen(1);
+          };
+        }).catch((message) => {
+          alert(message);
+        });
+      };
+      document.body.appendChild(script);
+    </script>
+    </div></center>
+     <script src="script.js"></script>
+     <script src="slider.js"></script>
+  </body>
+</html>

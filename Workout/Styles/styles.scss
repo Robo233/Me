@@ -1,0 +1,15 @@
+@mixin flexCenter(){
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+    }
+
+@import './body'; 
+@import './variables'; 
+@import './about'; 
+@import './calisthenics';
+@import './basics'; 
+@import './skills'; 
+@import './weighted'; 
+@import './contact'; 
