@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cuppercake</title>
+    <link rel="shortcut icon" type="image/png" href="../Images/favicon.png" />
+    <link
+    rel="stylesheet"
+    href="../../fontawesome-free-5.12.0-web/css/all.min.css"
+  />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../Styles/cuppercakeStyle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+
+  <body>
+    <img src="../Images/background.png" class="background" />
+    <div class="backgroundcolor"></div>
+
+    <div class="position">
+      <div class="middle">
+        <a href="../index.html">
+          <i  class="fas fa-home" id="home"></i>
+        </a>
+        <div class="position">
+          <a class="title">Cuppercake</a>
+        </div>
+        <a class="description">Description</a>
+        <a class="description-text">
+          This one is really delicious. Try out this chocolate cake! Probably
+          it's not a very easy recipe to make but worth it!
+        </a>
+
+        <div class="position">
+          <img src="../Images/cake.png" class="image" />
+        </div>
+
+        <a class="ingredients">Ingredients</a>
+
+        <ul class="ingredients-list">
+          <li>2 cups white sugar</li>
+          <li>1 ¾ cups all-purpose flour</li>
+          <li>¾ cup unsweetened cocoa powder</li>
+          <li>1 ½ teaspoons baking powder</li>
+          <li>1 ½ teaspoons baking soda</li>
+          <li>1 teaspoon salt</li>
+          <li>2 large eggs</li>
+          <li>1 cup milk</li>
+          <li>½ cup vegetable oil</li>
+          <li>2 teaspoons vanilla extract</li>
+          <li>1 cup boiling water</li>
+        </ul>
+
+        <a class="directions">Directions</a>
+
+        <a class="step1"> Step 1</a>
+        <br />
+        <div class="text-width">
+          <a class="step-1-text"
+            >Preheat oven to 350 degrees F (175 degrees C). Grease and flour two
+            nine inch round pans.</a
+          >
+        </div>
+        <br />
+
+        <a class="step2">Step 2</a>
+        <br />
+        <div class="text-width">
+          <a class="step-2-text"
+            >In a large bowl, stir together the sugar, flour, cocoa, baking
+            powder, baking soda and salt. Add the eggs, milk, oil and vanilla,
+            mix for 2 minutes on medium speed of mixer. Stir in the boiling
+            water last. Batter will be thin. Pour evenly into the prepared pans.
+          </a>
+        </div>
+        <br />
+
+        <a class="step3">Step 3</a>
+        <br />
+        <div class="text-width">
+          <a class="step-3-text"
+            >Bake 30 to 35 minutes in the preheated oven, until the cake tests
+            done with a toothpick. Cool in the pans for 10 minutes, then remove
+            to a wire rack to cool completely.
+          </a>
+        </div>
+
+        <div class="position">
+          <button class="print-button" onclick="print_current_page()">
+            <div class="position">
+              <i class="fas fa-print" id="print-symbol"></i>
+            </div>
+            <div class="position">
+              <a class="print">Print Recipe</a>
+            </div>
+          </button>
+       
+        </div>
+      </div>
+    </div>
+
+    <div class="recipes-background"></div>
+    <div class="position">
+      <a class="recipes-title" data-aos="fade-right">More recipes</a>
+    </div>
+
+    <div href="Awesomesteak.html">
+      <div class="position">
+        <div class="recipe2" onclick="window.open('Awesomesteak.html', '_blank')">
+          <div class="position">
+            <a class="recipe-title" >Awesome steak</a>
+          </div>
+          <div class="position">
+            <div class="background-recipe"></div>
+            <img class="recipe-image" src="../Images/steak.jpg" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="position">
+      <div class="recipe3" onclick="window.open('Superburger.html', '_blank')">
+        <div class="position">
+          <a class="recipe-title" >Super borger</a>
+        </div>
+        <div class="position">
+          <div class="background-recipe"></div>
+          <img class="recipe-image" src="../Images/burger.jpg" />
+        </div>
+      </div>
+    </div>
+
+    <a class="border2">a</a>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 40,
+        duration: 1000,
+      });
+    </script>
+       <script type="text/javascript" src="../Javascript/print.js"></script>
+  </body>
+  <footer>
+    <div id="footer">
+      <div class="position">
+        <div class="social-icons-down">
+          <a href="https://www.facebook.com/" target="_blank">
+            <i class="fab fa-facebook"></i>
+          </a>
+          <a href="https://twitter.com/" target="blank">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="https://www.youtube.com/" target="_blank">
+            <i class="fab fa-youtube"></i>
+          </a>
+          <a href="https://www.instagram.com/" target="_blank">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
+        <img src="Images/COOKer.png" class="logo-down" />
+      </div>
+    </div>
+  </footer>
+</html>

@@ -1,0 +1,861 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+body {
+  background-image: linear-gradient(120deg, #e2c35d, #fda085);
+}
+
+.position {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.sidebar-toggle {
+  position: fixed;
+  top: 2rem;
+  right: 3rem;
+  font-size: 2rem;
+  background: transparent;
+  border-color: transparent;
+  color: rgb(0, 106, 125);
+  transition: 0.5s;
+  cursor: pointer;
+  animation: bounce 2s ease-in-out infinite;
+  z-index: 1000;
+}
+.sidebar-toggle:hover {
+  color: rgb(0, 71, 84);
+}
+@keyframes bounce {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.sidebar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+}
+
+.close-btn {
+  font-size: 1.75rem;
+  background: transparent;
+  border-color: transparent;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+  color: darkred;
+  position: absolute;
+  top:10px;
+  right:10px;
+}
+.close-btn:hover {
+  color: rgb(212, 4, 4);
+  transform: rotate(360deg);
+}
+.logo {
+  position:absolute;
+  height: 45px;
+  top:20px;
+  left:20px;
+}
+
+.links {
+  position: absolute;
+  top: 150px;
+  width: 350px;
+}
+.social-icons {
+  justify-self: center;
+  display: flex;
+  position: absolute;
+  bottom: 5vh;
+}
+.plus {
+  font-size: 1.75rem;
+  z-index: 1;
+  position: absolute;
+  top: 225px;
+  left: 125px;
+  cursor: pointer;
+}
+.social-icons {
+  justify-self: center;
+  display: flex;
+  padding-bottom: 1.5rem;
+}
+.social-icons a {
+  font-size: 1.5rem;
+  margin: 0 0.5rem;
+  color: rgb(0, 106, 125);
+  transition: 0.5s;
+}
+.social-icons a:hover {
+  color: rgb(0, 173, 204);
+}
+@media screen and (max-width: 676px) {
+  .links {
+    width: 90vw;
+  }
+}
+@media screen and (max-height: 730px) {
+  .plus {
+    display: none;
+    color: white;
+  }
+  .links {
+    position: absolute;
+    bottom: 70px;
+  }
+  .social-icons {
+    justify-self: center;
+    display: flex;
+    position: absolute;
+    bottom: 5vh;
+  }
+}
+@media screen and (max-height: 490px) {
+  .links {
+    bottom: 10vh;
+  }
+  .social-icons {
+    justify-self: center;
+    display: flex;
+    position: absolute;
+    top: 88vh;
+  }
+}
+
+.links a {
+  display: block;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  padding: 1rem 1.5rem;
+  color: grey;
+  transition: 0.5s;
+  font-family: "Heebo", sans-serif;
+}
+@media screen and (max-height: 490px) {
+  .links {
+    position: absolute;
+    top: 50px;
+  }
+  .social-icons {
+    justify-self: center;
+    display: flex;
+    position: fixed;
+    bottom: 1vh;
+  }
+}
+@media screen and (max-height: 410px) {
+  .links a {
+    display: block;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    padding: 0.5rem 1.5rem;
+    color: grey;
+    transition: 0.5s;
+    font-family: "Heebo", sans-serif;
+    position: relative;
+    top: 40px;
+  }
+}
+@media screen and (max-height: 319px) {
+  .social-icons {
+    display: none;
+  }
+}
+
+.links a:hover {
+  background: steelblue;
+  color: black;
+  padding-left: 1.75rem;
+}
+
+.recipes {
+  cursor: pointer;
+}
+
+.minus {
+  font-size: 1.75rem;
+  z-index: 1;
+  position: absolute;
+  top: 220px;
+  left: 125px;
+  cursor: pointer;
+  display: none;
+}
+
+.recipe-links {
+  padding-left: 25px;
+  display: none;
+  cursor: pointer;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: white;
+  display: grid;
+  row-gap: 1rem;
+  transition: 0.5s;
+  transform: translate(-100%);
+  z-index: 10000;
+}
+.show-sidebar {
+  transform: translate(0);
+}
+@media screen and (min-width: 676px) {
+  .sidebar {
+    width: 400px;
+  }
+  .close-btn {
+
+    top:20px;
+    left:360px;
+  }
+}
+
+.Logo {
+  position: absolute;
+  top: 50px;
+  left: 10px;
+  width: 390px;
+}
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: black;
+  background-color: black;
+  opacity: 0.7;
+  width: 100%;
+  height: 907px;
+  z-index: 2;
+}
+.banner {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+
+.banner video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  width: 100%;
+  height: 910px;
+  
+}
+
+.title {
+  font-family: "Heebo", sans-serif;
+  font-size: 130px;
+  position: relative;
+  top: 300px;
+  max-width: 1200px;
+  color: rgb(209, 209, 209);
+  z-index: 1000;
+  cursor: default;
+  transition: 0.5s ease-in-out;
+}
+
+
+@media screen and (max-width: 990px) {
+  .title {
+    font-size: 110px;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .title {
+    font-size: 90px;
+  }
+}
+
+@media screen and (max-width: 489px) {
+  .title {
+    top: 220px;
+  }
+}
+
+@media screen and (max-width: 410px) {
+  .title {
+    font-size: 82px;
+  }
+}
+
+.border1 {
+  height: 40px;
+  width: 100%;
+  color: steelblue;
+  background-color: steelblue;
+  position: absolute;
+  top: 907px;
+}
+
+.about-us-background {
+  background-image: linear-gradient(
+    120deg,
+    rgb(191, 191, 191),
+    rgb(69, 69, 69)
+  );
+  position: absolute;
+  top: 947px;
+  width: 100%;
+  height: 820px;
+  z-index: -1;
+}
+
+.about-us {
+  font-family: "Heebo", sans-serif;
+  font-size: 80px;
+  position: absolute;
+  top: 1000px;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+
+.about-us:hover {
+  color: rgb(64, 20, 20);
+}
+
+.about-us-box {
+  position: absolute;
+  top: 1140px;
+  left: 20.1%;
+  width: 30%;
+  height: 500px;
+  border-left: 0.5vw solid steelblue;
+  border-top: 0.5vw solid steelblue;
+  border-bottom: 0.5vw solid steelblue;
+  border-top-left-radius: 15%;
+  border-bottom-left-radius: 15%;
+  background-color: lightgrey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+
+.about-us-box:hover {
+  background-color: rgb(163, 163, 163);
+}
+
+.about-us-box a {
+  font-size: 25px;
+  padding: 5px;
+  font-weight: 500;
+  position: relative;
+  bottom: 0px;
+  color: rgb(67, 67, 67);
+  font-family: "Roboto", sans-serif;
+}
+
+.about-us a {
+  margin: 10px 10px;
+}
+
+.image-background {
+  position: absolute;
+  top: 1140px;
+  width: 30%;
+  height: 500px;
+  right: 20.1%;
+  z-index: -1;
+  background-color: black;
+  border-top-right-radius: 15%;
+  border-bottom-right-radius: 15%;
+}
+
+.about-us-image {
+  position: absolute;
+  top: 1140px;
+  width: 30%;
+  height: 500px;
+  right: 20%;
+  cursor: pointer;
+  background-color: black;
+  z-index: 1;
+  border-right: 0.5vw solid steelblue;
+  border-top: 0.5vw solid steelblue;
+  border-bottom: 0.5vw solid steelblue;
+  border-top-right-radius: 15%;
+  border-bottom-right-radius: 15%;
+  transition: 0.5s ease-in-out;
+}
+
+.about-us-image:hover {
+  opacity: 0.5;
+}
+
+@media screen and (max-width: 860px) {
+  .about-us-box {
+    left: 10%;
+    width: 40%;
+  }
+  .image-background {
+    width: 40%;
+    right: 10%;
+  }
+  .about-us-image {
+    width: 40%;
+    right: 10%;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .about-us-box {
+    left: 2%;
+    width: 48%;
+  }
+  .image-background {
+    width: 48%;
+    right: 2%;
+  }
+  .about-us-image {
+    width: 48%;
+    right: 2%;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .about-us-box {
+    left: unset;
+    width: 90%;
+    top: 1100px;
+    border: 0.5vw solid steelblue;
+    border-radius: 30px;
+  }
+  .image-background {
+    display: none;
+  }
+  .about-us-image {
+    display: none;
+  }
+}
+
+.recipes-background {
+  background-image: linear-gradient(
+    120deg,
+    rgb(84, 255, 98),
+    rgb(84, 255, 184)
+  );
+  position: absolute;
+  top: 1700px;
+  width: 100%;
+  height: 860px;
+  z-index: -2;
+}
+
+@media screen and (max-width: 800px) {
+  .recipes-background {
+    top: 1700px;
+    height: 1450px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .recipes-background {
+    top: 1700px;
+    height: 2050px;
+  }
+}
+
+.recipes-title {
+  font-family: "Heebo", sans-serif;
+  font-size: 80px;
+  position: absolute;
+  top: 1825px;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+
+.recipes-title:hover {
+  color: rgb(64, 20, 20);
+}
+
+.recipe1 {
+  width: 20vw;
+  position: absolute;
+  top: 2000px;
+  border-radius: 20px;
+  left: 15vw;
+  height: 500px;
+  background-color: rgb(80, 130, 173);
+  border: 5px solid darkblue;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.recipe1:hover {
+  background-color: rgb(0, 99, 191);
+}
+
+.recipe2 {
+  width: 20vw;
+  position: absolute;
+  top: 2000px;
+  border-radius: 20px;
+  height: 500px;
+  background-color: rgb(80, 130, 173);
+  border: 5px solid darkblue;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.recipe2:hover {
+  background-color: rgb(0, 99, 191);
+}
+
+.recipe3 {
+  width: 20vw;
+  position: absolute;
+  top: 2000px;
+  border-radius: 20px;
+  right: 15vw;
+  height: 500px;
+  background-color: rgb(80, 130, 173);
+  border: 5px solid darkblue;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.recipe3:hover {
+  background-color: rgb(0, 99, 191);
+}
+
+@media screen and (max-width: 1100px) {
+  .recipe1 {
+    width: 28vw;
+    left: 5vw;
+  }
+
+  .recipe2 {
+    width: 28vw;
+  }
+
+  .recipe3 {
+    width: 28vw;
+    right: 5vw;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .recipe1 {
+    width: 40vw;
+    left: 5vw;
+  }
+
+  .recipe2 {
+    width: 40vw;
+    right: 5vw;
+  }
+
+  .recipe3 {
+    width: 40vw;
+    right: unset;
+    top: 2550px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .recipe1 {
+    width: 90vw;
+    left: unset;
+  }
+
+  .recipe2 {
+    width: 90vw;
+    top: 2575px;
+    right: unset;
+  }
+
+  .recipe3 {
+    width: 90vw;
+    right: unset;
+    top: 3150px;
+  }
+}
+
+.recipe-image {
+  width: 18vw;
+  height: 400px;
+  position: absolute;
+  bottom: 10px;
+}
+.recipe-image:hover {
+  opacity: 0.5;
+}
+.background-recipe {
+  width: 18vw;
+  height: 400px;
+  position: absolute;
+  bottom: 10px;
+  background-color: black;
+}
+@media screen and (max-width: 1100px) {
+  .recipe-image {
+    width: 26vw;
+    bottom: 10px;
+  }
+  .background-recipe {
+    width: 26vw;
+    background-color: black;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .recipe-image {
+    width: 38vw;
+    bottom: 10px;
+  }
+  .background-recipe {
+    width: 38vw;
+    background-color: black;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .recipe-image {
+    width: 86vw;
+    bottom: 10px;
+  }
+  .background-recipe {
+    width: 86vw;
+    background-color: black;
+  }
+}
+
+.recipe-title {
+  font-size: 30px;
+  font-family: "Heebo", sans-serif;
+  color: rgb(255, 66, 220);
+  padding-top: 10px;
+}
+.recipe-title:hover {
+  color: rgb(171, 0, 139);
+}
+
+.videos {
+  font-family: "Heebo", sans-serif;
+  font-size: 80px;
+  position: absolute;
+  top: 2640px;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+@media screen and (max-width: 800px) {
+  .videos {
+    top: 3180px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .videos {
+    top: 3790px;
+  }
+}
+
+.videos:hover {
+  color: rgb(64, 20, 20);
+}
+
+.video1 {
+  position: absolute;
+  top: 2800px;
+  left: 5vw;
+  width: 25vw;
+  height: 400px;
+}
+
+.video2 {
+  position: absolute;
+  top: 2800px;
+  width: 25vw;
+  height: 400px;
+}
+
+.video3 {
+  position: absolute;
+  top: 2800px;
+  right: 5vw;
+  width: 25vw;
+  height: 400px;
+}
+
+@media screen and (max-width: 800px) {
+  .video1 {
+    position: absolute;
+    top: 3300px;
+    left: 5vw;
+    width: 40vw;
+    height: 400px;
+  }
+
+  .video2 {
+    position: absolute;
+    top: 3300px;
+    right: 5vw;
+    width: 40vw;
+    height: 400px;
+  }
+
+  .video3 {
+    position: absolute;
+    top: 3800px;
+    right: unset;
+    width: 40vw;
+    height: 400px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .video1 {
+    position: absolute;
+    top: 3920px;
+    left: unset;
+    width: 90vw;
+    height: 400px;
+  }
+
+  .video2 {
+    position: absolute;
+    top: 4420px;
+    right: unset;
+    width: 90vw;
+    height: 400px;
+  }
+
+  .video3 {
+    position: absolute;
+    top: 4920px;
+    right: unset;
+    width: 90vw;
+    height: 400px;
+  }
+}
+
+.border2 {
+  height: 40px;
+  width: 100%;
+  color: steelblue;
+  background-color: steelblue;
+  position: absolute;
+  top: 3360px;
+}
+
+@media screen and (max-width: 800px) {
+  .border2 {
+    top: 4260px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .border2 {
+    top: 5420px;
+  }
+}
+
+#footer {
+  width: 100%;
+  height: 400px;
+  background-color: white;
+  color: white;
+  position: absolute;
+  top: 3400px;
+  position: absolute;
+}
+
+.logo-down {
+  cursor: pointer;
+  width: 500px;
+  z-index: 100;
+  position: absolute;
+  bottom: 50px;
+  left: 5px;
+}
+@media screen and (max-width: 520px) {
+  .logo-down {
+    cursor: pointer;
+    width: 90vw;
+    z-index: 100;
+    position: absolute;
+    bottom: 50px;
+    left: 5px;
+  }
+}
+
+.social-icons-down {
+  display: flex;
+  position: absolute;
+  bottom: 50px;
+}
+
+.social-icons-down a {
+  margin: 0 1rem;
+  color: rgb(0, 116, 166);
+  transition: 1.5s linear;
+  font-size: 25px;
+}
+
+.social-icons-down a:hover {
+  color: rgb(0, 178, 255);
+}
+
+@media screen and (max-width: 1235px) {
+  .social-icons-down {
+    display: flex;
+    position: absolute;
+    bottom: 50px;
+    left: 520px;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .social-icons-down {
+    display: flex;
+    position: absolute;
+    bottom: 150px;
+    left: unset;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #footer {
+    top: 4300px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  #footer {
+    top: 5460px;
+  }
+}

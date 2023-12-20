@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Awesome steak</title>
+    <link rel="shortcut icon" type="image/png" href="../Images/favicon.png" />
+    <link
+    rel="stylesheet"
+    href="../../fontawesome-free-5.12.0-web/css/all.min.css"
+  />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../Styles/awesomesteakStyle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+
+  <body>
+    <img src="../Images/background.png" class="background" />
+
+    <div class="position">
+      <div class="middle">
+        <a href="../index.html">
+          <i  class="fas fa-home" id="home"></i>
+        </a>
+
+        <div class="position">
+          <a class="title">Awesome steak</a>
+        </div>
+        <a class="description">Description</a>
+        <a class="description-text">
+          This is a very delicious steak,and it's also quite easy to make
+          it.Give it a try!
+        </a>
+
+        <div class="position">
+          <img src="../Images/steak.jpg" class="image" />
+        </div>
+
+        <a class="ingredients">Ingredients</a>
+
+        <ul class="ingredients-list">
+          <li>one teaspoon butter</li>
+          <li>a slice of beef</li>
+          <li>pepper</li>
+        </ul>
+
+        <a class="directions">Directions</a>
+
+        <a class="directions-text">
+          Making this food is easy!
+          <br />
+          Put the butter in the pan and heat it,until it's melted.The put the
+          beff in the pan and cook it for five minute. Put some pepper and turn
+          the beef to the other side. Last it for another 5 minute and it's
+          ready.</a
+>
+
+        <div class="position">
+          <button class="print-button" onclick="print_current_page()">
+            <div class="position">
+              <i class="fas fa-print" id="print-symbol"></i>
+            </div>
+            <div class="position">
+              <a class="print">Print Recipe</a>
+            </div>
+          </button>
+          
+        </div>
+      </div>
+    </div>
+
+    <div class="recipes-background" name="videos"></div>
+    <div class="position">
+      <a class="recipes-title" data-aos="fade-right">More recipes</a>
+    </div>
+
+    <div class="position">
+      <div class="recipe2" onclick="window.open('Superburger.html', '_blank')">
+        <div class="position">
+          <a class="recipe-title" >Super burger</a>
+        </div>
+        <div class="position">
+          <div class="background-recipe"></div>
+          <img class="recipe-image" src="../Images/burger.jpg" />
+        </div>
+      </div>
+    </div>
+
+    <div class="position">
+      <div class="recipe3" onclick="window.open('Cuppercake.html', '_blank')">
+        <div class="position">
+          <a class="recipe-title" >Cuppercake</a>
+        </div>
+        <div class="position">
+          <div class="background-recipe"></div>
+          <img class="recipe-image" src="../Images/cake.jpg" />
+        </div>
+      </div>
+    </div>
+
+    <a class="border2">a</a>
+  
+  </body>
+
+  <footer>
+    <div id="footer">
+      <div class="position">
+        <div class="social-icons-down">
+          <a href="https://www.facebook.com/" target="_blank">
+            <i class="fab fa-facebook"></i>
+          </a>
+          <a href="https://twitter.com/" target="blank">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="https://www.youtube.com/" target="_blank">
+            <i class="fab fa-youtube"></i>
+          </a>
+          <a href="https://www.instagram.com/" target="_blank">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
+        <img src="Images/COOKer.png" class="logo-down" />
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  
+  <script type="text/javascript" src="../Javascript/print.js"></script>
+
+</html>

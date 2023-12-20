@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Super Burger</title>
+    <link rel="shortcut icon" type="image/png" href="../Images/favicon.png" />
+    <link
+    rel="stylesheet"
+    href="../../fontawesome-free-5.12.0-web/css/all.min.css"
+  />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../Styles/superburgerStyle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+
+  <body>
+    <img src="../Images/background.png" class="background" />
+    <div class="backgroundcolor"></div>
+
+    <div class="position">
+      <div class="middle">
+        <a href="../index.html">
+          <i  class="fas fa-home" id="home"></i>
+        </a>
+        <div class="position">
+          <a class="title">Super Burger</a>
+        </div>
+        <a class="description">Description</a>
+        <a class="description-text">
+          If you want to eat something delicious,try out this burger.It's less
+          than 20 minutes to make it and it's very good!
+        </a>
+
+        <div class="position">
+          <img src="../Images/burger.png" class="image" />
+        </div>
+
+        <a class="ingredients">Ingredients</a>
+
+        <ul class="ingredients-list">
+          <li>olive oil</li>
+          <li>one burger bun</li>
+          <li>one beef burger</li>
+          <li>cheese</li>
+          <li>tomatoe</li>
+          <li>onion</li>
+          <li>cucumber</li>
+          <li>lettuce</li>
+        </ul>
+
+        <a class="directions">Directions</a>
+
+        <a class="step1"> Step 1</a>
+        <br />
+        <div class="text-width">
+          <a class="step-1-text"
+            >Put some olive oil in the pan,heat it and put the beef in the pan,
+            cook it for about 10 minutes,the put some cheese in it, nad wait
+            until it's melted.</a
+          >
+        </div>
+        <br />
+        <a class="step2">Step 2</a>
+        <br />
+        <div class="text-width">
+          <a class="step-2-text">
+            Slice the onion, tomatoe, cucumber and letucce then put it on the
+            burger bun. After the beef is ready put it on the vegetables. You
+            can eat this with souces like ketchup if you want.</a
+          >
+        </div>
+
+        <div class="position">
+          <button class="print-button" onclick="print_current_page()">
+            <div class="position">
+              <i class="fas fa-print" id="print-symbol"></i>
+            </div>
+            <div class="position">
+              <a class="print">Print Recipe</a>
+            </div>
+          </button>
+          <script type="text/javascript" src="../Javascript/print.js"></script>
+        </div>
+      </div>
+    </div>
+
+    <div class="recipes-background"></div>
+    <div class="position">
+      <a class="recipes-title" data-aos="fade-right">More recipes</a>
+    </div>
+
+    <div href="Awesomesteak.html">
+      <div class="position">
+        <div class="recipe2" onclick="window.open('Awesomesteak.html', '_blank')">
+          <div class="position">
+            <a class="recipe-title" >Awesome steak</a>
+          </div>
+          <div class="position">
+            <div class="background-recipe"></div>
+            <img class="recipe-image" src="../Images/steak.jpg" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="position">
+      <div class="recipe3" onclick="window.open('Cuppercake.html', '_blank')">
+        <div class="position">
+          <a class="recipe-title" >Cuppercake</a>
+        </div>
+        <div class="position">
+          <div class="background-recipe"></div>
+          <img class="recipe-image" src="../Images/cake.jpg" />
+        </div>
+      </div>
+    </div>
+
+    <a class="border2">a</a>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 40,
+        duration: 1000,
+      });
+    </script>
+  </body>
+
+  <footer>
+    <div id="footer">
+      <div class="position">
+        <div class="social-icons-down">
+          <a href="https://www.facebook.com/" target="_blank">
+            <i class="fab fa-facebook"></i>
+          </a>
+          <a href="https://twitter.com/" target="blank">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="https://www.youtube.com/" target="_blank">
+            <i class="fab fa-youtube"></i>
+          </a>
+          <a href="https://www.instagram.com/" target="_blank">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
+        <img src="Images/COOKer.png" class="logo-down" />
+      </div>
+    </div>
+  </footer>
+</html>

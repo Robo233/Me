@@ -1,0 +1,835 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  
+}
+ul {
+  list-style-type: none;
+}
+a {
+ 
+  color:white;
+}
+body{
+  background-color: rgb(209, 154, 107);
+}
+
+ .position{
+    display:flex;
+  justify-content: center;
+  align-items:center;
+  text-align:center; 
+ }
+
+.background-color{
+  position:absolute;
+  top:0;
+  z-index:-1;
+  width:100%;
+  height:1290px;
+  background-color: black;
+}
+ .background{
+  width:100%;
+  height:1290px;
+  opacity: 0.25;
+ }
+  .background-tablet{
+display:none;
+}
+@media screen and (max-width: 1024px){
+ .backgroundcolor-tablet{
+  position:absolute;
+  top:0;
+  z-index:-1;
+  width:100%;
+  height:1290px;
+  background-color: black;
+}
+ .background-tablet{
+  display:block;
+  width:100%;
+  height:1290px;
+  opacity: 0.25;
+ }
+
+ .background{
+display:none;
+}
+}
+
+ @media screen and (max-width: 700px){
+.background-color{
+  display:none;
+}
+.background-tablet{
+  display:none;
+}
+ }
+
+ #home{
+  font-size:80px;
+  position:absolute;
+  left:20px;
+  top:20px;
+  cursor:pointer;
+  color:rgb(209, 209, 209);
+ }
+ #home:hover{
+  color:rgb(148, 148, 148);
+ }
+
+.recipe1{
+  width:25vw;
+  position: absolute;
+  top:100px;
+  border-radius: 20px;
+  left:20vw;
+  height:450px;
+   background-color:rgb(80, 130, 173);
+  border:5px solid darkblue;
+  cursor:pointer;
+  transition:0.5s;
+}
+.recipe1:hover{
+background-color:rgb(0, 99, 191);
+
+}
+
+.recipe2{
+  width:25vw;
+  position: absolute;
+  top:100px;
+  right:20vw;
+  border-radius: 20px;
+  height:450px;
+  background-color:rgb(80, 130, 173);
+  border:5px solid darkblue;
+  cursor:pointer;
+  transition:0.5s;
+}
+.recipe2:hover{
+background-color:rgb(0, 99, 191);
+
+}
+
+.recipe3{
+  width:25vw;
+  position: absolute;
+  top:640px;
+  border-radius: 20px;
+  left:20vw;
+  height:450px;
+  background-color:rgb(80, 130, 173);
+  border:5px solid darkblue;
+  cursor:pointer;
+  transition:0.5s;
+}
+.recipe3:hover{
+background-color:rgb(0, 99, 191);
+
+}
+
+.recipe4{
+  width:25vw;
+  position: absolute;
+  top:640px;
+  border-radius: 20px;
+  right:20vw;
+  height:450px;
+  background-color:rgb(80, 130, 173);
+  border:5px solid darkblue;
+  cursor:pointer;
+  transition:0.5s;
+}
+.recipe4:hover{
+background-color:rgb(0, 99, 191);
+
+}
+#background1{
+  width:20vw;
+  height:370px;
+  position:absolute;
+  bottom:10px;
+  transition:0.5s;
+  z-index:5;
+  background-color: black;
+}
+.recipe-image1{
+  width:20vw;
+  height:370px;
+  position:absolute;
+  bottom:10px;
+  transition:0.5s;
+  z-index:6;
+  
+}
+.recipe-image1:hover{
+ opacity: 0.5;
+}
+#background2{
+  width:20vw;
+  height:370px;
+  position:absolute;
+  bottom:10px;
+  transition:0.5s;
+  z-index:5;
+  background-color: black;
+}
+.recipe-image2{
+  width:20vw;
+  height:370px;
+  position:absolute;
+  bottom:10px;
+  transition:0.5s;
+  z-index:6;
+}
+
+.recipe-image2:hover{
+ opacity: 0.5;
+}
+
+#background3{
+ width:20vw;
+  height:370px;
+  position:absolute;
+  bottom:10px;
+  transition:0.5s;
+  z-index:5;
+  background-color: black;
+}
+.recipe-image3{
+  width:20vw;
+  height:370px;
+  position:absolute;
+  bottom:10px;
+  transition:0.5s;
+  z-index:6;
+}
+
+.recipe-image3:hover{
+ opacity: 0.5;
+}
+
+#background4{
+ width:20vw;
+  height:370px;
+  position:absolute;
+  bottom:10px;
+  transition:0.5s;
+  z-index:5;
+  background-color: black;
+}
+
+.recipe-image4{
+  width:20vw;
+  height:370px;
+  position:absolute;
+  bottom:10px;
+  transition:0.5s;
+  z-index:6;
+}
+
+.recipe-image4:hover{
+ opacity: 0.5;
+}
+
+@media screen and (max-width: 1024px){
+  #background1{
+ width:30vw;
+  height:370px;
+  position:absolute;
+  bottom:10px;
+  transition:0.5s;
+  z-index:5;
+  background-color: black;
+}
+.recipe-image1{
+  width:30vw;
+  height:370px;
+  position:absolute;
+  bottom:10px;
+  transition:0.5s;
+}
+#background2{
+ width:30vw;
+  height:370px;
+  position:absolute;
+  bottom:10px;
+  transition:0.5s;
+  z-index:5;
+  background-color: black;
+}
+.recipe-image2{
+  width:30vw;
+  height:370px;
+  position:absolute;
+  bottom:10px;
+  transition:0.5s;
+}
+#background3{
+ width:30vw;
+  height:370px;
+  position:absolute;
+  bottom:10px;
+  transition:0.5s;
+  z-index:5;
+  background-color: black;
+}
+.recipe-image3{
+  width:30vw;
+  height:370px;
+  position:absolute;
+  bottom:10px;
+  transition:0.5s;
+}
+#background4{
+ width:30vw;
+  height:370px;
+  position:absolute;
+  bottom:10px;
+  transition:0.5s;
+  z-index:5;
+  background-color: black;
+}
+.recipe-image4{
+  width:30vw;
+  height:370px;
+  position:absolute;
+  bottom:10px;
+  transition:0.5s;
+}
+
+  }
+  @media screen and (max-width: 700px){
+    #background1{
+ width:45vw;
+  height:370px;
+  position:absolute;
+  bottom:10px;
+  transition:0.5s;
+  z-index:5;
+  background-color: black;
+}
+.recipe-image1{
+  width:45vw;
+  height:370px;
+  position:absolute;
+  bottom:10px;
+  transition:0.5s;
+}
+    #background2{
+ width:45vw;
+  height:370px;
+  position:absolute;
+  bottom:10px;
+  transition:0.5s;
+  z-index:5;
+  background-color: black;
+}
+.recipe-image2{
+  width:45vw;
+  height:370px;
+  position:absolute;
+  bottom:10px;
+  transition:0.5s;
+}
+    #background3{
+ width:45vw;
+  height:370px;
+  position:absolute;
+  bottom:10px;
+  transition:0.5s;
+  z-index:5;
+  background-color: black;
+}
+.recipe-image3{
+  width:45vw;
+  height:370px;
+  position:absolute;
+  bottom:10px;
+  transition:0.5s;
+}
+    #background4{
+ width:45vw;
+  height:370px;
+  position:absolute;
+  bottom:10px;
+  transition:0.5s;
+  z-index:5;
+  background-color: black;
+}
+.recipe-image4{
+  width:45vw;
+  height:370px;
+  position:absolute;
+  bottom:10px;
+  transition:0.5s;
+}
+  }
+  @media screen and (max-width: 600px){
+        #background1{
+ width:57.5vw;
+  height:370px;
+  position:absolute;
+  bottom:10px;
+  transition:0.5s;
+  z-index:5;
+  background-color: black;
+}
+.recipe-image1{
+  width:57.5vw;
+  height:370px;
+  position:absolute;
+  bottom:10px;
+  transition:0.5s;
+}
+    #background2{
+ width:57.5vw;
+  height:370px;
+  position:absolute;
+  bottom:10px;
+  transition:0.5s;
+  z-index:5;
+  background-color: black;
+}
+.recipe-image2{
+  width:57.5vw;
+  height:370px;
+  position:absolute;
+  bottom:10px;
+  transition:0.5s;
+}
+    #background3{
+ width:57.5vw;
+  height:370px;
+  position:absolute;
+  bottom:10px;
+  transition:0.5s;
+  z-index:5;
+  background-color: black;
+}
+.recipe-image3{
+  width:57.5vw;
+  height:370px;
+  position:absolute;
+  bottom:10px;
+  transition:0.5s;
+}
+    #background4{
+ width:57.5vw;
+  height:370px;
+  position:absolute;
+  bottom:10px;
+  transition:0.5s;
+  z-index:5;
+  background-color: black;
+}
+.recipe-image4{
+  width:57.5vw;
+  height:370px;
+  position:absolute;
+  bottom:10px;
+  transition:0.5s;
+}
+
+  }
+    @media screen and (max-width: 500px){
+    #background1{
+ width:67.5vw;
+  height:370px;
+  position:absolute;
+  bottom:10px;
+  transition:0.5s;
+  z-index:5;
+  background-color: black;
+}
+.recipe-image1{
+  width:67.5vw;
+  height:370px;
+  position:absolute;
+  bottom:10px;
+  transition:0.5s;
+}
+    #background2{
+ width:67.5vw;
+  height:370px;
+  position:absolute;
+  bottom:10px;
+  transition:0.5s;
+  z-index:5;
+  background-color: black;
+}
+.recipe-image2{
+  width:67.5vw;
+  height:370px;
+  position:absolute;
+  bottom:10px;
+  transition:0.5s;
+}
+    #background3{
+ width:67.5vw;
+  height:370px;
+  position:absolute;
+  bottom:10px;
+  transition:0.5s;
+  z-index:5;
+  background-color: black;
+}
+.recipe-image3{
+  width:67.5vw;
+  height:370px;
+  position:absolute;
+  bottom:10px;
+  transition:0.5s;
+}
+    #background4{
+ width:67.5vw;
+  height:370px;
+  position:absolute;
+  bottom:10px;
+  transition:0.5s;
+  z-index:5;
+  background-color: black;
+}
+.recipe-image4{
+  width:67.5vw;
+  height:370px;
+  position:absolute;
+  bottom:10px;
+  transition:0.5s;
+}
+
+  }
+
+      @media screen and (max-width: 400px){
+    #background1{
+ width:80vw;
+  height:370px;
+  position:absolute;
+  bottom:10px;
+  transition:0.5s;
+  z-index:5;
+  background-color: black;
+}
+.recipe-image1{
+  width:80vw;
+  height:370px;
+  position:absolute;
+  bottom:10px;
+  transition:0.5s;
+}
+   #background2{
+ width:80vw;
+  height:370px;
+  position:absolute;
+  bottom:10px;
+  transition:0.5s;
+  z-index:5;
+  background-color: black;
+}
+.recipe-image2{
+  width:80vw;
+  height:370px;
+  position:absolute;
+  bottom:10px;
+  transition:0.5s;
+}
+   #background3{
+ width:80vw;
+  height:370px;
+  position:absolute;
+  bottom:10px;
+  transition:0.5s;
+  z-index:5;
+  background-color: black;
+}
+.recipe-image3{
+  width:80vw;
+  height:370px;
+  position:absolute;
+  bottom:10px;
+  transition:0.5s;
+}
+   #background4{
+ width:80vw;
+  height:370px;
+  position:absolute;
+  bottom:10px;
+  transition:0.5s;
+  z-index:5;
+  background-color: black;
+}
+.recipe-image4{
+  width:80vw;
+  height:370px;
+  position:absolute;
+  bottom:10px;
+  transition:0.5s;
+}
+
+  }
+
+@media screen and (max-width: 1024px){
+
+  .recipe1{
+  width:35vw;
+  left:10vw;
+}
+
+  .recipe2{
+  width:35vw;
+  right:10vw;
+}
+
+.recipe3{
+  width:35vw;
+  left:10vw;
+}
+
+.recipe4{
+  width:35vw;
+  right:10vw;
+}
+
+}
+
+@media screen and (max-width: 850px){
+
+  .recipe1{
+  width:40vw;
+  left:5vw;
+}
+
+  .recipe2{
+  width:40vw;
+  right:5vw;
+}
+
+.recipe3{
+  width:40vw;
+  left:5vw;
+}
+.recipe4{
+  width:40vw;
+  right:5vw;
+}
+}
+
+@media screen and (max-width: 700px){
+
+  .recipe1{
+  width:50vw;
+  left:unset;
+  top:140px;
+}
+
+  .recipe2{
+  width:50vw;
+  right:unset;
+  top:640px;
+}
+
+.recipe3{
+  width:50vw;
+  left:unset;
+  top:1140px;
+}
+.recipe4{
+  width:50vw;
+  right:unset;
+  top:1640px;
+}
+}
+
+
+@media screen and (max-width: 600px){
+
+  .recipe1{
+  width:62.5vw;
+  left:unset;
+  
+}
+
+  .recipe2{
+  width:62.5vw;
+  right:unset;
+  
+}
+
+.recipe3{
+  width:62.5vw;
+  left:unset;
+  
+}
+
+.recipe4{
+  width:62.5vw;
+  right:unset;
+  
+}
+
+  }
+
+  @media screen and (max-width: 500px){
+
+  .recipe1{
+  width:72.5vw;
+  left:unset;
+  
+}
+
+  .recipe2{
+  width:72.5vw;
+  right:unset;
+  
+}
+
+.recipe3{
+  width:72.5vw;
+  left:unset;
+  
+}
+
+.recipe4{
+  width:72.5vw;
+  right:unset;
+  
+}
+
+  }
+
+    @media screen and (max-width: 400px){
+
+  .recipe1{
+  width:90vw;
+  left:unset;
+  
+}
+
+  .recipe2{
+  width:90vw;
+  right:unset;
+  
+}
+
+.recipe3{
+  width:90vw;
+  left:unset;
+  
+}
+
+.recipe4{
+  width:90vw;
+  right:unset;
+  
+}
+
+  }
+
+.recipe-title{
+font-size: 30px;
+font-family: 'Heebo', sans-serif;
+color:rgb(255, 66, 220);
+padding-top: 10px;
+}
+.recipe-title:hover{
+color:rgb(171, 0, 139);
+  }
+
+.border2{
+
+  height:40px;
+  width:100%;
+  color:steelblue;
+  background-color: steelblue;
+  position:absolute;
+  top:1290px;
+
+}
+@media screen and (max-width: 700px){
+.border2{
+
+  top:2300px;
+
+}
+  }
+
+#footer {
+  width:100%;
+  height:400px;
+  background-color: white;
+  color:white;
+  position:absolute;
+  left:0;
+  top:1330px;
+  clear:both;
+  position:absolute;
+  
+}
+@media screen and (max-width: 700px){
+  #footer {
+top:2340px;
+}
+}
+
+.logo-down {
+  cursor: pointer;
+  width:500px;
+  z-index: 100;
+  position:absolute;
+  bottom:50px;
+  left:5px;
+
+}
+@media screen and (max-width:520px){
+
+.logo-down {
+  cursor: pointer;
+  width:90vw;
+  z-index: 100;
+  position:absolute;
+  bottom:50px;
+  left:5px;
+
+}
+  }
+
+  .social-icons-down {
+    display: flex;
+    position:absolute;
+    bottom:50px;
+  }
+
+  .social-icons-down a {
+    margin: 0 1rem;
+    color: rgb(0, 116, 166);
+    transition:1.5s linear ;
+    font-size: 25px;
+  }
+
+  .social-icons-down a:hover {
+    color: rgb(0, 178, 255);
+  }
+
+@media screen and (max-width: 1235px){
+ .social-icons-down {
+    display: flex;
+    position:absolute;
+    bottom:50px;
+    left:520px;
+  }
+}
+
+@media screen and (max-width:760px){
+ .social-icons-down {
+    display: flex;
+    position:absolute;
+    bottom:150px;
+    left:unset;
+  }
+  }
