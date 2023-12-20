@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gulyas generator</title>
+    <link rel="shortcut icon" type="image/png" href="./cauldron.png" />
+    <link rel="stylesheet" href="../fontawesome-free-5.12.0-web/css/all.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Lobster&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="gulyasstyle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+  
+  <div id="container">
+    <body style="background-color: #c26604; ">
+      
+    <a id="languageEn" style="position:absolute; right:20px; top:20px; font-family: 'Heebo', sans-serif; font-size:30px; cursor:pointer  "  > EN </a>
+
+    <a id="languageHu" style="position:absolute; right:20px; top:20px; font-family: 'Heebo', sans-serif; font-size:30px; cursor:pointer; display:none;  "  > HU </a>
+
+          <div style=" display:flex; justify-content: center; align-items:center; text-align:center; position:relative; top:180px">
+            <form class="form" >
+               <input type="text" id="firstNumber" /><br />
+
+              <input style="color:#0470c2; background-color: brown; border:none; border-radius:10px; width:70px; height:30px; position:relative; top:20px; cursor:pointer; "
+                type="button"
+                onClick="addBy()"
+                value="OK"
+                class="button"
+              />
+              <br />
+              <br />
+              <br />
+            </form>
+          </div>
+
+          <div style=" display:flex; justify-content: center; align-items:center; text-align:center;">
+            
+            <br />
+            <div  style="font-family: 'Heebo', sans-serif; position:relative; top:200px; font-size:20px" >
+              <span id="oil"></span><br />
+              <span id="onion"></span><br />
+              <span id="bell pepper"></span><br />
+              <span id="tomatoes"></span><br />
+              <span id="beef"></span><br />
+              <span id="caraway"></span><br />
+              <span id="paprika"></span><br />
+              <span id="potatoes"></span><br />
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </body>
+   
+  </div>
+</html>
+
+<script>
+
+var languageEn = document.querySelector("#languageEn");
+var languageHu = document.querySelector("#languageHu");
+Boolean; isEnglish = false;
+Boolean; isTextVisible = false;
+
+    languageEn.onclick=function(){
+    languageEn.style.display="none";
+    languageHu.style.display="block";
+    isEnglish = true;
+    console.log(isEnglish);
+    if(isTextVisible){
+    addBy();
+    }
+  }
+
+    languageHu.onclick=function(){
+    languageHu.style.display="none";
+    languageEn.style.display="block";
+    isEnglish = false;
+    console.log(isEnglish);
+    if(isTextVisible){
+    addBy();
+    }
+  }
+
+  function addBy() {
+ isTextVisible = true;
+    if(isEnglish==false){
+    num = document.getElementById("firstNumber").value;
+    if (num > 20) {
+      document.getElementById("oil").innerHTML =
+        (num * 0.05).toFixed(2) + " l of oil";
+    } else {
+      document.getElementById("oil").innerHTML =
+        (num * 50).toFixed(2) + " ml of oil";
+    }
+    if (num < 10) {
+      document.getElementById("onion").innerHTML =
+        (num * 100).toFixed(2) + " g of onion";
+    } else {
+      document.getElementById("onion").innerHTML =
+        (num * 0.1).toFixed(2) + " kg of onion";
+    }
+
+    if (num < 20) {
+      document.getElementById("bell pepper").innerHTML =
+        (num * 50).toFixed(2) + " g of bell pepper";
+    } else {
+      document.getElementById("bell pepper").innerHTML =
+        (num * 0.05).toFixed(2) + " kg of bell pepper";
+    }
+
+    if (num < 40) {
+      document.getElementById("tomatoes").innerHTML =
+        (num * 25).toFixed(2) + " g of tomatoes";
+    } else {
+      document.getElementById("tomatoes").innerHTML =
+        (num * 0.025).toFixed(2) + " kg of tomatoes";
+    }
+
+    if (num < 6) {
+      document.getElementById("beef").innerHTML =
+        (num * 170).toFixed(2) + " g of beef";
+    } else {
+      document.getElementById("beef").innerHTML =
+        (num * 0.17).toFixed(2) + " kg of beef";
+    }
+    if (num < 334) {
+      document.getElementById("caraway").innerHTML =
+        (num * 3).toFixed(2) + " g of caraway";
+    } else {
+      document.getElementById("caraway").innerHTML =
+        (num * 0.003).toFixed(2) + " kg of caraway";
+    }
+    if (num < 334) {
+      document.getElementById("paprika").innerHTML =
+        (num * 3).toFixed(2) + " g of paprika";
+    } else {
+      document.getElementById("paprika").innerHTML =
+        (num * 0.003).toFixed(2) + " kg of paprika";
+    }
+
+    if (num < 3) {
+      document.getElementById("potatoes").innerHTML =
+        (num * 400).toFixed(2) + " g of potatoes";
+    } else {
+      document.getElementById("potatoes").innerHTML =
+        (num * 0.4).toFixed(2) + " kg of potatoes";
+    }
+  }
+  else{
+
+num = document.getElementById("firstNumber").value;
+    if (num > 20) {
+      document.getElementById("oil").innerHTML =
+        (num * 0.05).toFixed(2) + " l olaj";
+    } else {
+      document.getElementById("oil").innerHTML =
+        (num * 50).toFixed(2) + " ml olaj";
+    }
+    if (num < 10) {
+      document.getElementById("onion").innerHTML =
+        (num * 100).toFixed(2) + " g hagyma";
+    } else {
+      document.getElementById("onion").innerHTML =
+        (num * 0.1).toFixed(2) + " kg hagyma";
+    }
+
+    if (num < 20) {
+      document.getElementById("bell pepper").innerHTML =
+        (num * 50).toFixed(2) + " g paprika";
+    } else {
+      document.getElementById("bell pepper").innerHTML =
+        (num * 0.05).toFixed(2) + " kg paprika";
+    }
+
+    if (num < 40) {
+      document.getElementById("tomatoes").innerHTML =
+        (num * 25).toFixed(2) + " g paradicsom";
+    } else {
+      document.getElementById("tomatoes").innerHTML =
+        (num * 0.025).toFixed(2) + " kg paradicsom";
+    }
+
+    if (num < 6) {
+      document.getElementById("beef").innerHTML =
+        (num * 170).toFixed(2) + " g marhahús";
+    } else {
+      document.getElementById("beef").innerHTML =
+        (num * 0.17).toFixed(2) + " kg marhahús";
+    }
+    if (num < 334) {
+      document.getElementById("caraway").innerHTML =
+        (num * 3).toFixed(2) + " g kömény";
+    } else {
+      document.getElementById("caraway").innerHTML =
+        (num * 0.003).toFixed(2) + " kg kömény";
+    }
+    if (num < 334) {
+      document.getElementById("paprika").innerHTML =
+        (num * 3).toFixed(2) + " g fűszerpaprika";
+    } else {
+      document.getElementById("paprika").innerHTML =
+        (num * 0.003).toFixed(2) + " kg fűszerpaprika";
+    }
+
+    if (num < 3) {
+      document.getElementById("potatoes").innerHTML =
+        (num * 400).toFixed(2) + " g krumpli";
+    } else {
+      document.getElementById("potatoes").innerHTML =
+        (num * 0.4).toFixed(2) + " kg krumpli";
+    }
+
+  }
+  }
+</script>
