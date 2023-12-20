@@ -1,0 +1,12 @@
+#text {
+  color: #6b3811;
+}
+
+#text:hover {
+  color: #9c6840;
+}
+
+.falling img {
+  width: 200px;
+  height: 200px;
+}

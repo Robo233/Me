@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Seasons</title>
+    <link
+    rel="stylesheet"
+    href="../../fontawesome-free-5.12.0-web/css/all.min.css"
+  />
+    <link rel="stylesheet" href="Styles/styles.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="shortcut icon" type="image/png" href="Assets/Images/Logo.png" />
+  </head>
+
+  <body>
+    <div class="background"></div>
+
+    <a href="../Seasons/index.html">
+      <img src="Assets/Images/englishFlag.jpg" class="englishFlag" />
+    </a>
+
+    <a href="../Évszakok/index.html">
+      <img src="Assets/Images/hungarianFlag.jpg" class="hungarianFlag" />
+    </a>
+    
+    <div class="cursor"></div>
+    <div class="cursor2"></div>
+
+    <div class="buttonPosition">
+      <button
+        class="button"
+        id="mainButton"
+        onmousedown="showButtonsAudio.play()"
+      >
+        <a> Seasons </a>
+      </button>
+    </div>
+
+    <div class="buttonPosition">
+      <button
+        class="button"
+        id="mainButton2"
+        onmousedown="removeButtonsAudio.play()"
+      >
+        <a> Seasons </a>
+      </button>
+    </div>
+
+    <div class="buttonPosition">
+      <a href="Seasons/winter.html" target="_blank">
+        <button
+          class="button"
+          id="button1"
+          onmousedown="seasonPageAudio.play()"
+        >
+          Winter
+        </button>
+      </a>
+    </div>
+    <div class="buttonPosition">
+      <a href="Seasons/spring.html" target="_blank">
+        <button
+          class="button"
+          id="button2"
+          onmousedown="seasonPageAudio.play()"
+        >
+          Spring
+        </button>
+      </a>
+    </div>
+    <div class="buttonPosition">
+      <a href="Seasons/summer.html" target="_blank">
+        <button
+          class="button"
+          id="button3"
+          onmousedown="seasonPageAudio.play()"
+        >
+          Summer
+        </button>
+      </a>
+    </div>
+    <div class="buttonPosition">
+      <a href="Seasons/autumn.html" target="_blank">
+        <button
+          class="button"
+          id="button4"
+          onmousedown="seasonPageAudio.play()"
+        >
+          Autumn
+        </button>
+      </a>
+    </div>
+
+    <script src="Scripts/audio.js"></script>
+    <script src="Scripts/seasonButtons.js"></script>
+    <script src="Scripts/cursor.js"></script>
+
+    <button class="greenButton" onmousedown="colorChangeAudio.play()"></button>
+    <button class="blueButton" onmousedown="colorChangeAudio.play()"></button>
+    <script src="Scripts/colorChange.js"></script>
+  </body>
+
+  <footer>
+    <div id="footer">
+      <div class="social-icons-down-position">
+        <div class="social-icons-down">
+          <a
+            href="https://www.facebook.com/"
+            target="_blank"
+            onmousedown="socialMediaAudio.play()"
+          >
+            <i class="fab fa-facebook"></i>
+          </a>
+          <a
+            href="https://www.youtube.com/"
+            target="_blank"
+            onmousedown="socialMediaAudio.play()"
+          >
+            <i class="fab fa-youtube"></i>
+          </a>
+          <a
+            href="https://www.instagram.com/"
+            target="_blank"
+            onmousedown="socialMediaAudio.play()"
+          >
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a
+            href="https://www.twitter.com/"
+            target="_blank"
+            onmousedown="socialMediaAudio.play()"
+          >
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a
+            href="https://www.discord.com/"
+            target="_blank"
+            onmousedown="socialMediaAudio.play()"
+          >
+            <i class="fab fa-discord"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</html>
